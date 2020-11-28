@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("./1.jpg") center no-repeat;
+  background-size: cover;
+  color: aliceblue;
+  font-family: Clearface ITC W01, Georgia, Times New Roman, Times, serif;
+}
+
+.my-navbar {
+  background-color: #0c4d75;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px #747779;
+}
+
+.nav-item .nav-link {
+  margin: 0px 10px;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+.dropdown-menu {
+  border: none;
+  border: 1px solid black;
+  border-radius: 8%;
+  background-color: rgb(156, 156, 167);
+  box-shadow: 5px 10px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-item {
+  padding: 12px 40px 12px 20px;
+  font-size: 15px;
+  background-color: rgb(136, 136, 145);
+  font-weight: bolder;
+  color: white;
+  transform-origin: center;
+  animation: navigation 2s ease 1;
+  transition: all 300ms ease;
+}
+
+.dropdown-item:hover {
+  background-color: rgb(240, 230, 95);
+}
+
+/* @keyframes navigation {
+  0% {
+    transform: perspective(500px) rotatey(0deg);
+    transform-origin: center;
+  }
+
+  100% {
+    transform: perspective(500px) rotatey(270deg);
+    transform-origin: center;
+  }
+} */
+
+/* //box shadow */
+
+.main-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 90vh;
+}
+
+button {
+  border: none;
+  background: rgb(92, 92, 212);
+  width: 140px;
+  height: 50px;
+  border-bottom: 1px solid black;
+  border-radius: 10px 15px 10px 12px;
+  margin-left: 50px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+h2 {
+  margin-left: 100px;
+  color: #fff;
+  line-height: bold;
+  font-size: 40px;
+  font-family: "Dancing Script", cursive;
+  position: relative;
+  animation: text 6s 1;
+}
+
+@keyframes text {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+}
+
+p {
+  margin-left: 50px;
+  color: #1c241c;
+  line-height: bold;
+  font-size: 20px;
+  font-family: "Dancing Script", cursive;
+  position: relative;
+  animation: text1 5s 1;
+  font-weight: bold;
+}
+
+@keyframes text1 {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+}
